@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>论坛社区</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <script src="js/community.js" type="application/javascript"></script>
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script><!--引入jQuery-->
+    <!--bootstrap是基于jQuery库的，所以应该先导入jQuery-->
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script><!--引入bootstrap-->
+</head>
+<body>
+<p th:text="|Hello, ${name}!|" />
+<button type="button" onclick="testPost()">测试</button>
+<p id = "tag">你好</p>
+
+</body>
+</html>
+
+<!--浏览器 -》 controller -》 thymeleaf add model -> 页面 test.html -> button -> ajax 动作 -> 发起请求给后端- > 接收数据 渲染-->
